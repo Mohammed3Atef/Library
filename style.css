@@ -9,6 +9,11 @@ body{
     background:  #D6AD60 url(./library.jpg) center / cover no-repeat;
     background-blend-mode: multiply;
     min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 
 }
@@ -17,9 +22,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
+    margin-bottom: 15px;
+
 
 }
+header{
+    width: 100%;
 
+}
 header h1 {
     color: #ffb3a3;
     font-size: 36px;
@@ -42,6 +53,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: fit-content;
 }
 
 button:hover {
@@ -103,6 +115,8 @@ button:hover {
     border-radius: 10px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: start;
+
 }
 
 .close-button {
@@ -190,10 +204,10 @@ footer{
     text-align: center;
     padding: 0.5rem;
     color: white;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     background-color: #1b1e25;
     width: 100%;
     padding: 15px;

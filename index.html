@@ -13,9 +13,9 @@
     <header>
         <h1>My Library</h1>
     </header>
+    <button id="newBookButton">NEW BOOK</button>
+
     <div class="main">
-        <!-- <img src="/library.jpg" alt="background-cover" class="background-cover"> -->
-        <button id="newBookButton">NEW BOOK</button>
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
@@ -26,8 +26,11 @@
                     <input type="text" id="author" name="author" required>
                     <label for="pages">Pages:</label>
                     <input type="number" id="pages" name="pages" required>
-                    <label for="read">Read:</label>
-                    <input type="checkbox" id="read" name="read">
+                    <div>
+                        <label for="read">Read:</label>
+                        <input type="checkbox" id="read" name="read">
+
+                    </div>
                     <button type="submit">Add Book</button>
                 </form>
             </div>
